@@ -8,16 +8,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Open+Sans:wght@300&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css" />
-    <script defer src="js/main.js"></script>
+    <link rel="stylesheet" href="main.css/style.css" type="text/css" />
+    <script defer src="main.js/script.js"></script>
 </head>
 
 <body>
     <header>Hangman</header>
     <h4></h4>
     <button id="play-again-btn" onclick="newGame()">New game</button>
-    <div id="your-word"></div>
-    <div id="prompt"></div>
+    <br>
+    <br>
+    <label>Guess a letter: </label>
+    <input type="text" maxlength="1" id="input-letter">
+    <input type="button" value="Submit" id="submit-btn" onclick="getLetter()">
+
+    <div class="output" id="output1"></div>
+
     <div id="message"></div>
 
     <section id="hangman">

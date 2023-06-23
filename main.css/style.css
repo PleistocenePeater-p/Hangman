@@ -11,3 +11,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+#submit-button {
+  margin-top: 0.5vmin;
+}
