@@ -9,6 +9,10 @@ let word = wordBank[Math.floor(Math.random() * wordBank.length)];
 let errors = 0;
 let wordArray = [];
 console.log(word);
+let wordArray1 = word.split("");
+console.log(wordArray1);
+
+
 
 
 /*----- cached elements  -----*/
@@ -67,7 +71,8 @@ function getLetter(){
     wordDisEl.innerText = wordArrayJoin;
   }
 
-  
+
+
   
   // let underscores = word.length;
   // while (underscores > 0){
@@ -88,13 +93,14 @@ function getLetter(){
   
   /*to do
   grab a random word from wordbank
-  turn that random word into an array
+  turn that random word into an array : split() method
   turn that array into an array of underscores
   display the underscore array in a div
   
   accept userInput as a letter
-  check the random word array if that letter exists in the word - .some()
+  check the random word array if that letter exists in the word
   if correct: splice the correct letter into the underscore array
+    forEach ?
   if incorrect: errors++
   
   function gameOver(){
